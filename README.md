@@ -50,7 +50,6 @@ La aplicación se abrirá en:
 
 🧠 Estructura del Proyecto
 
-<img width="303" alt="Screenshot 2025-06-23 at 12 48 33 PM" src="https://github.com/user-attachments/assets/c2944485-44c0-49fd-bfcd-c0ec1a693ad8" />
 
 
 ⸻
@@ -98,6 +97,4 @@ rm users.json history.json linked_accounts.json
 
 🖼️ Capturas del proyecto
 
-![Dashboard](assets/dashboard-dark.png)
-![Historial](assets/historial.png)
-![Conversor](assets/conversor.png)
+
