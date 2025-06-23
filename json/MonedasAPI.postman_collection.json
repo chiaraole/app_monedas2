@@ -1,161 +1,269 @@
 {
-    "info": {
-      "name": "Monedas API",
-      "_postman_id": "4e0df8da-60f4-4aa1-bf85-ef3d01e56700",
-      "description": "Colección para probar registro, login, cuentas y transferencias.",
-      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-    },
-    "item": [
-      {
-        "name": "📝 Registrar usuario",
-        "request": {
-          "method": "POST",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"username\": \"luis\",\n  \"password\": \"1234\"\n}",
-            "options": {
-              "raw": {
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "http://127.0.0.1:8000/auth/register",
-            "protocol": "http",
-            "host": ["127.0.0.1"],
-            "port": "8000",
-            "path": ["auth", "register"]
-          }
-        },
-        "response": []
-      },
-      {
-        "name": "🔐 Login (obtener token)",
-        "request": {
-          "method": "POST",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"username\": \"luis\",\n  \"password\": \"1234\"\n}",
-            "options": {
-              "raw": {
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "http://127.0.0.1:8000/auth/login",
-            "protocol": "http",
-            "host": ["127.0.0.1"],
-            "port": "8000",
-            "path": ["auth", "login"]
-          }
-        },
-        "response": []
-      },
-      {
-        "name": "💰 Agregar fondos",
-        "request": {
-          "method": "POST",
-          "header": [
-            {
-              "key": "Authorization",
-              "value": "Bearer {{token}}",
-              "type": "text"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json",
-              "type": "text"
-            }
-          ],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"currency\": \"USD\",\n  \"balance\": 100\n}"
-          },
-          "url": {
-            "raw": "http://127.0.0.1:8000/users/add",
-            "protocol": "http",
-            "host": ["127.0.0.1"],
-            "port": "8000",
-            "path": ["users", "add"]
-          }
-        },
-        "response": []
-      },
-      {
-        "name": "👤 Ver mis cuentas",
-        "request": {
-          "method": "GET",
-          "header": [
-            {
-              "key": "Authorization",
-              "value": "Bearer {{token}}",
-              "type": "text"
-            }
-          ],
-          "url": {
-            "raw": "http://127.0.0.1:8000/users/me",
-            "protocol": "http",
-            "host": ["127.0.0.1"],
-            "port": "8000",
-            "path": ["users", "me"]
-          }
-        },
-        "response": []
-      },
-      {
-        "name": "💸 Transferir fondos",
-        "request": {
-          "method": "POST",
-          "header": [
-            {
-              "key": "Authorization",
-              "value": "Bearer {{token}}",
-              "type": "text"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json",
-              "type": "text"
-            }
-          ],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"to_user\": \"maria\",\n  \"amount\": 50,\n  \"from_currency\": \"USD\",\n  \"to_currency\": \"PEN\"\n}"
-          },
-          "url": {
-            "raw": "http://127.0.0.1:8000/transactions/send",
-            "protocol": "http",
-            "host": ["127.0.0.1"],
-            "port": "8000",
-            "path": ["transactions", "send"]
-          }
-        },
-        "response": []
-      },
-      {
-        "name": "📄 Historial de transferencias",
-        "request": {
-          "method": "GET",
-          "header": [
-            {
-              "key": "Authorization",
-              "value": "Bearer {{token}}",
-              "type": "text"
-            }
-          ],
-          "url": {
-            "raw": "http://127.0.0.1:8000/transactions/history",
-            "protocol": "http",
-            "host": ["127.0.0.1"],
-            "port": "8000",
-            "path": ["transactions", "history"]
-          }
-        },
-        "response": []
-      }
-    ],
-    "event": []
-  }
+	"info": {
+		"_postman_id": "e92447ff-3020-40a8-9e92-d30f3b9be6a6",
+		"name": "Monedas API v2",
+		"description": "Colección completa de endpoints para el backend de Monedas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29281944"
+	},
+	"item": [
+		{
+			"name": "📝 Registrar usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"luis\",\n  \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "🔐 Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"luis\",\n  \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "👤 Ver saldo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"url": "127.0.0.1:8000/users/me"
+			},
+			"response": []
+		},
+		{
+			"name": "💸 Transferir a otro usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"to_user\": \"Y\",\n  \"amount\": 50,\n  \"from_currency\": \"USD\",\n  \"to_currency\": \"PEN\"\n}"
+				},
+				"url": "127.0.0.1:8000/transactions/send"
+			},
+			"response": []
+		},
+		{
+			"name": "📄 Historial de transacciones",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": "127.0.0.1:8000/transactions/history"
+			},
+			"response": []
+		},
+		{
+			"name": "🔁 Convertir saldo propio",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"to_user\": \"luis\",\n  \"amount\": 50,\n  \"from_currency\": \"USD\",\n  \"to_currency\": \"PEN\"\n}"
+				},
+				"url": "127.0.0.1:8000/transactions/convert-self"
+			},
+			"response": []
+		},
+		{
+			"name": "🌐 Consulta cambio moneda (público)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/convert?from_currency=USD&to_currency=PEN&amount=100",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"convert"
+					],
+					"query": [
+						{
+							"key": "from_currency",
+							"value": "USD"
+						},
+						{
+							"key": "to_currency",
+							"value": "PEN"
+						},
+						{
+							"key": "amount",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "🏦 Afiliar cuenta externa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"alias\": \"bcp_soles\",\n  \"banco\": \"BCP\",\n  \"numero\": \"987654321\",\n  \"moneda\": \"PEN\"\n}"
+				},
+				"url": "127.0.0.1:8000/linked/add"
+			},
+			"response": []
+		},
+		{
+			"name": "📋 Ver cuentas afiliadas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": "127.0.0.1:8000/linked/list"
+			},
+			"response": []
+		},
+		{
+			"name": "💸 Transferir a cuenta afiliada",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"alias\": \"bcp_soles\",\n  \"amount\": 50,\n  \"moneda\": \"PEN\"\n}"
+				},
+				"url": "127.0.0.1:8000/linked/transfer"
+			},
+			"response": []
+		},
+		{
+			"name": "💳 Recargar desde cuenta afiliada",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"alias\": \"bcp_soles\",\n  \"amount\": 100,\n  \"moneda\": \"PEN\"\n}"
+				},
+				"url": "127.0.0.1:8000/linked/deposit"
+			},
+			"response": []
+		},
+		{
+			"name": "Summary",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Tipo_de_Monedas",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Export Data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "monedas",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
