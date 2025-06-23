@@ -1,0 +1,25 @@
+{
+    "X": {
+        "password": "ebaa3dad218f7353fc595d99344f03ba762be3ba4ee1e65166d5a31f14814cfb",
+        "accounts": {
+            "PEN": 100.0,
+            "USD": 200.0
+        }
+    },
+    "Y": {
+        "password": "e1fce846a459101e2e6b92bee407519e895a33ed709348b3352023b045abe2bf",
+        "accounts": {
+            "PEN": 50.0,
+            "USD": 100.0
+        }
+    },
+    "example": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "example@example.com",
+        "phone": "976876456",
+        "accounts": {
+            "PEN": 50.0,
+            "USD": 3.9000000000000004
+        }
+    }
+}

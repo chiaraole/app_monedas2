@@ -1,0 +1,161 @@
+{
+    "info": {
+      "name": "Monedas API",
+      "_postman_id": "4e0df8da-60f4-4aa1-bf85-ef3d01e56700",
+      "description": "Colección para probar registro, login, cuentas y transferencias.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "📝 Registrar usuario",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"username\": \"luis\",\n  \"password\": \"1234\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://127.0.0.1:8000/auth/register",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["auth", "register"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "🔐 Login (obtener token)",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"username\": \"luis\",\n  \"password\": \"1234\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://127.0.0.1:8000/auth/login",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["auth", "login"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "💰 Agregar fondos",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{token}}",
+              "type": "text"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"currency\": \"USD\",\n  \"balance\": 100\n}"
+          },
+          "url": {
+            "raw": "http://127.0.0.1:8000/users/add",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["users", "add"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "👤 Ver mis cuentas",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{token}}",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "http://127.0.0.1:8000/users/me",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["users", "me"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "💸 Transferir fondos",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{token}}",
+              "type": "text"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"to_user\": \"maria\",\n  \"amount\": 50,\n  \"from_currency\": \"USD\",\n  \"to_currency\": \"PEN\"\n}"
+          },
+          "url": {
+            "raw": "http://127.0.0.1:8000/transactions/send",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["transactions", "send"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "📄 Historial de transferencias",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{token}}",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "http://127.0.0.1:8000/transactions/history",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["transactions", "history"]
+          }
+        },
+        "response": []
+      }
+    ],
+    "event": []
+  }

@@ -1,0 +1,15 @@
+{
+    "X": [],
+    "Y": [],
+    "example": [
+        {
+            "from_user": "example",
+            "to_user": "example",
+            "amount": 50.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 13.9,
+            "rate": 0.278
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "example": [
+        {
+            "alias": "bbva_soles",
+            "banco": "BBVA",
+            "numero": "9836492386782",
+            "moneda": "PEN"
+        },
+        {
+            "alias": "bcp_dolares",
+            "banco": "BCP",
+            "numero": "23648723649988",
+            "moneda": "USD"
+        }
+    ]
+}
