@@ -1,0 +1,70 @@
+{
+    "X": {
+        "password": "ebaa3dad218f7353fc595d99344f03ba762be3ba4ee1e65166d5a31f14814cfb",
+        "accounts": {
+            "PEN": 100.0,
+            "USD": 200.0
+        }
+    },
+    "Y": {
+        "password": "e1fce846a459101e2e6b92bee407519e895a33ed709348b3352023b045abe2bf",
+        "accounts": {
+            "PEN": 50.0,
+            "USD": 100.0
+        }
+    },
+    "alice": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "alice@example.com",
+        "phone": "123456789",
+        "accounts": {
+            "PEN": 50.0,
+            "USD": 0.0
+        }
+    },
+    "testexport": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "testexport@example.com",
+        "phone": "999999999",
+        "accounts": {
+            "PEN": 0.0,
+            "USD": 0.0
+        }
+    },
+    "test": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "test@example.com",
+        "phone": "888888888",
+        "accounts": {
+            "PEN": 0.0,
+            "USD": 0.0
+        }
+    },
+    "usuariotest1": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "usuario1@example.com",
+        "phone": "999888777",
+        "accounts": {
+            "PEN": 0.0,
+            "USD": 0.0
+        }
+    },
+    "usuariotest_nuevo": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "nuevo@example.com",
+        "phone": "999000111",
+        "accounts": {
+            "PEN": 0.0,
+            "USD": 0.0
+        }
+    },
+    "usuariotest_nuevo2": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "nuevo2@example.com",
+        "phone": "999000112",
+        "accounts": {
+            "PEN": 0.0,
+            "USD": 0.0
+        }
+    }
+}

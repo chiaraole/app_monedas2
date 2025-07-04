@@ -19,7 +19,16 @@
         "phone": "976876456",
         "accounts": {
             "PEN": 50.0,
-            "USD": 3.9000000000000004
+            "USD": 8422.399999999983
+        }
+    },
+    "Xpass": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "email": "example@correo.com",
+        "phone": "987654321",
+        "accounts": {
+            "PEN": 25607.099999998543,
+            "USD": 0.0
         }
     }
 }

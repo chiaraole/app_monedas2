@@ -1,0 +1,16 @@
+{
+    "alice": [
+        {
+            "alias": "bcp_pen",
+            "banco": "BCP",
+            "numero": "123456789",
+            "moneda": "PEN"
+        },
+        {
+            "alias": "bbva_pen",
+            "banco": "BBVA",
+            "numero": "999999",
+            "moneda": "PEN"
+        }
+    ]
+}

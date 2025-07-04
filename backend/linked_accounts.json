@@ -12,5 +12,13 @@
             "numero": "23648723649988",
             "moneda": "USD"
         }
+    ],
+    "Xpass": [
+        {
+            "alias": "sol_bbva",
+            "banco": "BCP",
+            "numero": "2349654345",
+            "moneda": "PEN"
+        }
     ]
 }

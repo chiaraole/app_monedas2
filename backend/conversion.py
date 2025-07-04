@@ -1,6 +1,6 @@
 # backend/conversion.py
 from fastapi import APIRouter, HTTPException, Query
-from exchange import APIExchangeRate1  # o APIExchangeRate2
+from exchange import APIExchangeRate1
 
 router = APIRouter()
 exchange = APIExchangeRate1()
@@ -13,10 +13,10 @@ def convert_currency(
 ):
     if from_currency == to_currency:
         return {"converted": round(amount, 2), "rate": 1.0}
-    
+
     try:
         rate = exchange.get_rate(from_currency, to_currency)
         converted = round(amount * rate, 2)
         return {"converted": converted, "rate": rate}
-    except Exception:
+    except Exception as e:
         raise HTTPException(status_code=500, detail="No se pudo obtener la tasa de cambio")
