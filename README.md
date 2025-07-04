@@ -121,9 +121,3 @@ Para limpiar todos los datos y empezar de cero, elimina estos archivos desde `/b
 ```bash
 rm users.json history.json linked_accounts.json
 ```
-
----
-
-## 🖼️ Capturas del proyecto
-
-*(Aquí puedes incluir tus capturas de pantalla de la app, JMeter y los tests.)*
