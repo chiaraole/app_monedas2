@@ -1,0 +1,27 @@
+from auth import register, USERS
+from database import save_users
+from models import UserRegister
+
+def test_register_new_user():
+    test_username = "testuser"
+
+    # Limpieza antes del test
+    if test_username in USERS:
+        del USERS[test_username]
+        save_users()
+
+    # Ejecutar registro
+    user = UserRegister(
+        username=test_username,
+        password="testpass",
+        email="testuser@example.com",
+        phone="999123456"
+    )
+    response = register(user)
+
+    assert response == {"message": "Usuario registrado exitosamente"}
+    assert test_username in USERS
+
+    # Limpieza después del test
+    del USERS[test_username]
+    save_users()

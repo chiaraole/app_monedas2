@@ -1,0 +1,249 @@
+{
+    "X": [
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 10.0,
+            "rate": 1.0
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 10.0,
+            "rate": 1.0
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 10.0,
+            "rate": 1.0
+        },
+        {
+            "from_user": "X",
+            "to_user": "X",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 10.0,
+            "rate": 1.0
+        }
+    ],
+    "Y": [
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 2.81,
+            "rate": 0.281
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 10.0,
+            "rate": 1.0
+        },
+        {
+            "from_user": "X",
+            "to_user": "Y",
+            "amount": 10.0,
+            "from_currency": "PEN",
+            "to_currency": "USD",
+            "converted": 10.0,
+            "rate": 1.0
+        }
+    ]
+}
